@@ -15,4 +15,6 @@ php artisan make:model Model/Reply -rfm
 php artisan make:model Model/Category -rfm
 php artisan make:model Model/Like -rfm
 
+
+php artisan migrate
 <!-- php artisan make:controller ReplyController --api -->

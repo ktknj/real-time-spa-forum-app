@@ -17,7 +17,7 @@ class CreateRepliesTable extends Migration
             $table->bigIncrements('id');
 
             $table->text('body');
-            $table->integer('question_id')->unsigned();
+            $table->bigInteger('question_id')->unsigned();
 
             $table->integer('user_id');
             // /外部キー制約
