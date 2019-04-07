@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reply extends Model
 {
+
+    protected $guarded = [];
     public function question()
     {
         return $this->belongsTo('App\Model\Question');
@@ -13,7 +15,7 @@ class Reply extends Model
 
     public function user()
     {
-        return $this->belongsTo('App\Use');
+        return $this->belongsTo('App\User');
     }
 
     public function like()

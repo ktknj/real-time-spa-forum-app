@@ -25,7 +25,7 @@ class Question extends Model
 
     public function replies()
     {
-        return $this->hasMany('App\User');
+        return $this->hasMany('App\Model\Reply');
     }
 
     public function category()
